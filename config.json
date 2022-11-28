@@ -1,0 +1,25 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/codingthunder",
+    "prod_uri": "mysql://root:@localhost/codingthunder",
+    "fb_url": "https://facebook.com",
+    "tw_url": "https://twitter.com/",
+    "gh_url": "https://github.com/",
+    "website_name": "Code It Up",
+    "blog_name": "Code It Up",
+    "tag_line": "A Blog liked by Programmers",
+    "H1_tagline": "The tagline",
+    "gmail-user": "sunitq.phand@gmail.com",
+    "gmail-password": "yktbygkpuqjnluii",
+    "about_text": "Hi my name is Vickrant and I create programming tutorials and I am a good boy",
+    "no_of_posts": 2,
+    "login_image":"login.svg",
+    "admin_user":"harry",
+    "admin_password": "subscribenow",
+    "upload_location": "C:\\Users\\Acer\\PycharmProjects\\Flask-tut\\static\\uploaded_files"
+
+
+  }
+}
