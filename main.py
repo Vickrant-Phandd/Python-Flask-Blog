@@ -1,5 +1,5 @@
 # from crypt import methods
-
+# importing Flask and other modules
 from flask import Flask, render_template, request, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
@@ -13,9 +13,13 @@ with open('config.json', 'r') as c:
     params = json.load(c)["params"]
 
 local_server = True
+# App defined and variable name is 'app' which takes a string argument
 app = Flask(__name__)
+
 app.secret_key = 'super-secret-key'
 app.config['UPLOAD_FOLDER'] = params['upload_location']
+
+# Configuring GMail and below are the default parameters for Gmail
 app.config.update(
     MAIL_SERVER='smtp.gmail.com',
     MAIL_PORT='465',
@@ -24,6 +28,7 @@ app.config.update(
     MAIL_PASSWORD=params['gmail-password']
 )
 mail = Mail(app)
+
 if (local_server):
     app.config["SQLALCHEMY_DATABASE_URI"] =  params['local_uri']
 else:
@@ -51,6 +56,19 @@ class Posts(db.Model):
     date = db.Column(db.String(12), nullable=True)
     img_file = db.Column(db.String(12), nullable=True)
 
+#Pagination Logic----------------------------------------
+# first page
+# prev - #
+# next - page + 1
+#
+# middle page
+# prev - page-1
+# next - page +1
+#
+# last page
+# prev - page -1
+# next - #
+# ---------------------------------------------------------------
 
 @app.route("/")
 def home():
@@ -87,11 +105,13 @@ def dashboard():
         return render_template('dashboard.html', params=params, posts=posts)
 
     if request.method == "POST":
+       # request.form.get('') will bring post request from parameters (login.html)
         username = request.form.get('uname')
         userpass = request.form.get('pass')
         if (username==params['admin_user'] and userpass==params['admin_password']):
             # set the session variabe
             session['user']=username
+            # fetch all posts from Data base using Posts.query.all()
             posts = Posts.query.all()
             return render_template('dashboard.html', params=params, posts=posts)
 
@@ -161,16 +181,21 @@ def delete(srno):
 @app.route("/contact", methods=['GET', 'POST'])  # GET method is use to fetch any file or url from server
 def contact():
     if (request.method == 'POST'):
-        # fetch and Add entry to database
+        # fetch from HTML
+        # getting input with name = name in HTML form
         name = request.form.get('name')
+        #getting input with name = email in HTML form
         email = request.form.get('email')
+        # getting input with name = phone in HTML form
         phone = request.form.get('phone')
+        # getting input with name = message in HTML form
         message = request.form.get('message')
 
-        # entry to db -- right side db-column name -- left side variable name fetch from contact form
+        # entry to db -- left side db-column name -- right side variable name fetch from contact form
         entry = Contacts(name=name, phonenumber=phone, message=message, date=datetime.now(), emailid=email)
         db.session.add(entry)
         db.session.commit()
+        # Sending mail to gmail account
         mail.send_message('New message from ' + name,
                           sender=email,
                           recipients=[params['gmail-user']],

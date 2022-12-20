@@ -16,8 +16,8 @@
     "about_text": "Hi my name is Vickrant and I create programming tutorials and I am a good boy",
     "no_of_posts": 2,
     "login_image":"login.svg",
-    "admin_user":"harry",
-    "admin_password": "subscribenow",
+    "admin_user":"Vicky",
+    "admin_password": "password",
     "upload_location": "C:\\Users\\Acer\\PycharmProjects\\Flask-tut\\static\\uploaded_files"
 
 
