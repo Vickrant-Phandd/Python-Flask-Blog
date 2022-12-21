@@ -30,9 +30,9 @@ Blogging website created using Python Flask Framework.
 
 •	Languages: Python | Basic HTML | Bootstrap Template
 
-•	Frame Work:  Django
+•	Frame Work:  Flask
 
-•	Database: MySQL 
+•	Database and Server: MySQL and Apache
 
 •	Libraries: SQLAlchemy | Flask
 
