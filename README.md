@@ -12,8 +12,11 @@ Blogging website created using Python Flask Framework.
  - [Post Request](https://pythonprogramming.net/flask-get-post-requests-handling-tutorial/)
  - [Flask Mail](https://pythonhosted.org/Flask-Mail/)
  
+ # Home Page
 ![home](https://user-images.githubusercontent.com/90562556/208852508-94c0b846-c0a0-4b70-ac21-65eeeae9f92e.JPG)
-![](images/contact-bg.jpg)
+
+# Contact Form
+![contact](https://user-images.githubusercontent.com/90562556/208854517-9b73caa2-2da4-4dc4-a0b6-3ce01b5b6428.JPG)
 
 ## Features
 
