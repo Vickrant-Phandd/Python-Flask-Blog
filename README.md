@@ -36,7 +36,7 @@ Blogging website created using Python Flask Framework.
 
 •	Libraries: SQLAlchemy | Flask
 
-•	Platforms: Pycharm 
+•	Platforms: Pycharm | Xampp
 
 
 
