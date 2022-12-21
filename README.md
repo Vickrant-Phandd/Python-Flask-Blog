@@ -16,7 +16,7 @@ Blogging website created using Python Flask Framework.
 ![home](https://user-images.githubusercontent.com/90562556/208852508-94c0b846-c0a0-4b70-ac21-65eeeae9f92e.JPG)
 
 # Contact Form
-![contact](https://user-images.githubusercontent.com/90562556/208854517-9b73caa2-2da4-4dc4-a0b6-3ce01b5b6428.JPG)
+![contact1](https://user-images.githubusercontent.com/90562556/208855120-23204d94-4d05-41c6-8eeb-8a5fc19ad818.JPG)
 
 ## Features
 
