@@ -41,7 +41,7 @@ Blogging website created using Python Flask Framework.
 
 
 ## 🚀 About Me
-I am certified and skilled Python Developer seeking to become proficient in the field of Programming. Knowledge of coding with Analytical programming using Python, R and SQL. Knowledge of Flask Framework and Python Libraries like Pandas, Matplotlib, Numpy, Scikit-Learn along with writing SQL Queries, Stored procedures, functions, packages, tables, views.
+I am certified and skilled Python Developer seeking to become proficient in the field of Programming. Knowledge of coding with Analytical programming using Python, R and SQL. Knowledge of Flask and Django Framework and Python Libraries like Pandas, Matplotlib, Numpy, Scikit-Learn along with writing SQL Queries, Stored procedures, functions, packages, tables, views.
 
 
 ## 🔗 Links
