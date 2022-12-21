@@ -12,7 +12,7 @@ Blogging website created using Python Flask Framework.
  - [Post Request](https://pythonprogramming.net/flask-get-post-requests-handling-tutorial/)
  - [Flask Mail](https://pythonhosted.org/Flask-Mail/)
  
-
+![home](https://user-images.githubusercontent.com/90562556/208852508-94c0b846-c0a0-4b70-ac21-65eeeae9f92e.JPG)
 
 ## Features
 
